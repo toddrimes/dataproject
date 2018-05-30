@@ -1,0 +1,16 @@
+<script src="https://aframe.io/releases/0.6.1/aframe.min.js"></script>
+<script src="https://jeromeetienne.github.io/AR.js/aframe/build/aframe-ar.js"></script>
+
+<body style='margin : 0px; overflow: hidden; font-family: Monospace;'><div style='position: fixed; top: 10px; width:100%; text-align: center; z-index: 1;'>
+    <span style="color: white; background-color: orangered">You need the Hiro AR marker to activate: <strong><a href='https://github.com/jeromeetienne/AR.js/blob/master/data/images/HIRO.jpg' target='_blank'>DOWNLOAD</a></strong></span>
+</div>
+<!-- <a-scene embedded arjs='sourceType: image; sourceUrl:../../data/images/armchair.jpg;'> -->
+<a-scene embedded arjs='sourceType: webcam;'>
+    <!-- a-sphere position="0 0.5 0" radius="0.5" color="#EF2D5E"></a-sphere>
+    <a-plane position="0 0 0" rotation="-90 0 0" width="1" height="1" color="#7BC8A4"></a-plane -->
+    <a-entity obj-model="obj: url(https://rawgit.com/toddrimes/dataproject/master/baseball.obj?token=AAWNrlvQz-veTYjNkcqn_jx_ukwL_ptYks5bF2AVwA%3D%3D);mtl: url(https://rawgit.com/toddrimes/dataproject/master/baseball.mtl?token=AAWNrlj6GCDzhfp2P82FLw5X4eAq-mVNks5bF2BEwA%3D%3D)" position="" rotation="" scale="20 20 20" visible=""></a-entity>
+
+    <a-marker-camera preset='hiro'></a-marker-camera>
+</a-scene>
+</body>
+</html>
